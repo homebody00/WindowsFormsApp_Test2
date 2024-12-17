@@ -16,6 +16,7 @@ namespace WindowsFormsApp_Test2
         {
             InitializeComponent();
 
+            #region 실습. 배열.
             string[] str = new string[10];
 
             string s1 = "동해 물과 백두산이";
@@ -27,8 +28,8 @@ namespace WindowsFormsApp_Test2
             string s7 = "이름,나이,전화번호";
             string s8 = "우리 나라 만세";
 
-            str[0] = s1.IndexOf("백두산").ToString();
-            str[1] = s2.IndexOf("토").ToString();
+            str[0] = s1.IndexOf("백두산").ToString(); // str[0] = "동해 물과 백두산이".IndexOf("백두산").ToString();
+            str[1] = s2.LastIndexOf("토").ToString();
             str[2] = s3.Contains("퇴").ToString();
             str[3] = s4.Replace("그", "이");
             str[4] = s5.Insert(3, "애플 ");
@@ -45,6 +46,12 @@ namespace WindowsFormsApp_Test2
             {
                 textBox_print.Text += str[i] + "\r\n";
             }
+            #endregion
+
+            
+
+
+
         }
     }
 }
