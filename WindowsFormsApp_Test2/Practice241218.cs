@@ -18,7 +18,7 @@ namespace WindowsFormsApp_Test2
             int num1 = 201;
             int num2 = 10;
 
-            int[] result = divide(num1, num2);
+            int[] result = getShareAndRest(num1, num2);
 
             textBox_print.Text = num1 + " / " + num2 + " = " + result[0] + "\r\n";
             textBox_print.Text += num1 + " % " + num2 + " = " + result[1];
@@ -27,7 +27,7 @@ namespace WindowsFormsApp_Test2
 
         }
 
-        int[] divide(int a, int b)
+        int[] getShareAndRest(int a, int b)
         {
             int[] intArray = new int[3];
 

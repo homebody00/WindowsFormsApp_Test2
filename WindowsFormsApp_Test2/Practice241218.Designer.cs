@@ -35,15 +35,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("12LotteMartDreamBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(32, 43);
+            this.label1.Font = new System.Drawing.Font("NanumGothicCoding", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(31, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 24);
+            this.label1.Size = new System.Drawing.Size(116, 27);
             this.label1.TabIndex = 5;
             this.label1.Text = "Result: ";
             // 
             // textBox_print
             // 
+            this.textBox_print.Font = new System.Drawing.Font("NanumGothicCoding", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox_print.Location = new System.Drawing.Point(36, 70);
             this.textBox_print.Multiline = true;
             this.textBox_print.Name = "textBox_print";
