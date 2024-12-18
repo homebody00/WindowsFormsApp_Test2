@@ -18,41 +18,43 @@ namespace WindowsFormsApp_Test2
 
             #region 실습. 문자열.
 
-            string str = "멈추지 않는 한 얼마나 천천히 가는지는 중요하지 않다. -공자";
-            // 1
-            int num = str.IndexOf("-");
-            string firstStr = str.Remove(num, 3);
-            textBox_print.Text = "1. " + firstStr + "\r\n";
+            //string str = "멈추지 않는 한 얼마나 천천히 가는지는 중요하지 않다. -공자";
+            //// 1
+            //int num = str.indexof("-");
+            //string firststr = str.remove(num, 3);
+            //textbox_print.text = "1. " + firststr + "\r\n";
 
-            // 2
-            string[] stringArray = new string[10];
+            //// 2
+            //string[] stringarray = new string[10];
 
-            int[] temp = new int[3];
+            //int[] temp = new int[3];
 
-            temp[0] = str.IndexOf("얼마나");
-            temp[1] = str.IndexOf("천천히");
-            temp[2] = str.IndexOf("가는지");
+            //temp[0] = str.indexof("얼마나");
+            //temp[1] = str.indexof("천천히");
+            //temp[2] = str.indexof("가는지");
 
-            for (int i =0; i < temp.Length; i++)
-            {
-                stringArray[i] = str.Substring(temp[i], 3);
-            }
+            //for (int i =0; i < temp.length; i++)
+            //{
+            //    stringarray[i] = str.substring(temp[i], 3);
+            //}
 
-            textBox_print.Text += "2. ";
-            for (int i = 0; i < 3; i++)
-            {
-                textBox_print.Text += stringArray[i] + "\r\n";
-            }
+            //textbox_print.text += "2. ";
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    textbox_print.text += stringarray[i] + "\r\n";
+            //}
 
 
-            // 3
-            string secondStr = str.Replace(".", "");
-            secondStr = secondStr.Replace("-", "");
-            secondStr = secondStr.Replace(" ", ",");
+            //// 3
+            //string secondstr = str.replace(".", "");
+            //secondstr = secondstr.replace("-", "");
+            //secondstr = secondstr.replace(" ", ",");
 
-            textBox_print.Text += "3. " + secondStr + "\r\n";
+            //textbox_print.text += "3. " + secondstr + "\r\n";
 
             #endregion
+
+            Console.WriteLine("Hello");
         }
     }
 }
