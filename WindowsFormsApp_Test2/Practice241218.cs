@@ -40,12 +40,12 @@ namespace WindowsFormsApp_Test2
         {
             InitializeComponent();
 
-            bool result = throwCoin(false);
+            bool result = coinTossGame(false);
 
             textBox_print.Text = result.ToString() + "\r\n";
         }
 
-        bool throwCoin(bool a)
+        bool coinTossGame(bool a)
         {
             Random randomObj = new Random();
             int randomValue = randomObj.Next(); // int형 난수 생성
