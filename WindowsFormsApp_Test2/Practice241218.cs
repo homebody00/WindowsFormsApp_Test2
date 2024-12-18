@@ -50,27 +50,18 @@ namespace WindowsFormsApp_Test2
             Random randomObj = new Random();
             int randomValue = randomObj.Next(); // int형 난수 생성
             randomValue %= 2;
+            bool coin = randomValue == 1;
 
-            if (randomValue == 1)
+            if (coin == a)
             {
-                if (a == true)
-                {
-                    return true;
-                }
-                else
-                    return false;
-            }
-            else if (randomValue == 0)
-            {
-                if (a == false)
-                {
-                    return true;
-                }
-                else
-                    return false;
+                return true;
             }
             else
+            {
                 return false;
+            }
+
+            
         }
 
     }
