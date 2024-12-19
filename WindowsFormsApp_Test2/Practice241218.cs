@@ -19,6 +19,7 @@ namespace WindowsFormsApp_Test2
         {
             InitializeComponent();
 
+            // Form 생성시 최초 1 회만 실행됨
 
 
 
@@ -48,7 +49,7 @@ namespace WindowsFormsApp_Test2
         //}
         #endregion
 
-        #region 실습2. if문
+        #region 실습2. if문.
         //public Practice241218()
         //{
         //    InitializeComponent();
