@@ -16,13 +16,11 @@ namespace WindowsFormsApp_Test2
         {
             InitializeComponent();
 
-            
-
-
-
+                
 
         }
 
+        #region 실습. switch문. (enum)
         enum Week
         {
             Monday,
@@ -34,44 +32,39 @@ namespace WindowsFormsApp_Test2
             Sunday
         }
 
-        private void button_input_Click(object sender, EventArgs e)
+        int chooseDaysOfWeek(string message)
         {
-            int input=0;
-
-            switch (textBox_input.Text)
+            switch (message)
             {
                 case "월요일":
                 case "월":
-                    input = 0;
-                    break;
+                    return 0;
                 case "화요일":
                 case "화":
-                    input = 1;
-                    break;
+                    return 1;
                 case "수요일":
                 case "수":
-                    input = 2;
-                    break;
+                    return 2;
                 case "목요일":
                 case "목":
-                    input = 3;
-                    break;
+                    return 3;
                 case "금요일":
                 case "금":
-                    input = 4;
-                    break;
+                    return 4;
                 case "토요일":
                 case "토":
-                    input = 5;
-                    break;
+                    return 5;
                 case "일요일":
-                    case "일":
-                    input = 6;
-                    break;
+                case "일":
+                    return 6;
                 default:
-                    textBox_result.Text = "요일을 입력해주세요.\r\n";
-                    break;
+                    return -1;
             }
+        }
+
+        private void button_input_Click(object sender, EventArgs e)
+        {
+            int input = chooseDaysOfWeek(textBox_input.Text);
 
             switch (input)
             {
@@ -111,5 +104,6 @@ namespace WindowsFormsApp_Test2
                 button_input_Click(sender, e);
             }
         }
+        #endregion
     }
 }
