@@ -78,6 +78,7 @@ namespace WindowsFormsApp_Test2
         //}
         #endregion
 
+        #region 실습3. 사용자 입력.
         private void button_input_Click(object sender, EventArgs e)
         {
             bool choice;
@@ -95,6 +96,8 @@ namespace WindowsFormsApp_Test2
                     textBox_result.Text += "승리!\r\n";
                 else
                     textBox_result.Text += "패배\r\n";
+
+                radioButton_True.Checked = false;
             }
             else if (textBox_input.Text.ToLower() == "false")
             {
@@ -108,9 +111,17 @@ namespace WindowsFormsApp_Test2
                     textBox_result.Text += "승리!\r\n";
                 else
                     textBox_result.Text += "패배\r\n";
+
+                radioButton_False.Checked = false;
             }
-            else 
+            else
+            {
                 textBox_result.Text = "라디오 버튼을 눌러 입력해주세요.\r\n";
+                radioButton_True.Checked = false;
+                radioButton_False.Checked = false;
+            }
+
+
 
 
             textBox_input.Text = string.Empty;
@@ -156,5 +167,6 @@ namespace WindowsFormsApp_Test2
                 return false;
             }
         }
+        #endregion
     }
 }
